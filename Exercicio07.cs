@@ -1,16 +1,19 @@
 using System;
+using System.Globalization;
 
 class Exercicio07
 {
     static void Main()
     {
-        Console.Write("Digite o seu nome: ");
-        string nome = Console.ReadLine();
+        Console.Write("Digite o primeiro número: ");
+        double num1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-        Console.Write("Digite a sua idade: ");
-        int idade = int.Parse(Console.ReadLine());
+        Console.Write("Digite o segundo número: ");
+        double num2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-        Console.WriteLine("Nome: " + nome);
-        Console.WriteLine("Idade: " + idade);
+        double subtracao = num2 - num1;
+
+        Console.WriteLine("O resultado da subtração do segundo pelo primeiro é: " + subtracao);
+        Console.ReadLine();
     }
 }

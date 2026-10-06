@@ -1,14 +1,16 @@
 using System;
+using System.Globalization;
 
 class Exercicio04
 {
     static void Main()
     {
-        Console.Write("Digite \"sim\" ou \"não\": ");
-        string resposta = Console.ReadLine();
+        Console.Write("Digite um número: ");
+        double numero = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-        bool valor = resposta.Trim().ToLower() == "sim";
+        double quadrado = numero * numero;
 
-        Console.WriteLine("O valor armazenado foi: " + valor);
+        Console.WriteLine("O quadrado é: " + quadrado);
+        Console.ReadLine();
     }
 }

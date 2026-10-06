@@ -5,9 +5,12 @@ class Exercicio02
 {
     static void Main()
     {
-        Console.Write("Digite um número real: ");
+        Console.Write("Digite um número: ");
         double numero = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-        Console.WriteLine("O número digitado foi: " + numero);
+        double dobro = numero * 2;
+
+        Console.WriteLine("O dobro é: " + dobro);
+        Console.ReadLine();
     }
 }

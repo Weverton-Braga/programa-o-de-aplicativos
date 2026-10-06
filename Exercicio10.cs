@@ -4,22 +4,12 @@ class Exercicio10
 {
     static void Main()
     {
-        Console.Write("Digite o número da casa: ");
-        string numeroCasa = Console.ReadLine();
+        Console.Write("Digite um número inteiro: ");
+        int numero = int.Parse(Console.ReadLine());
 
-        Console.Write("Digite a rua: ");
-        string rua = Console.ReadLine();
+        int resto = numero % 2;
 
-        Console.Write("Digite o bairro: ");
-        string bairro = Console.ReadLine();
-
-        Console.Write("Digite a cidade: ");
-        string cidade = Console.ReadLine();
-
-        Console.Write("Digite o estado: ");
-        string estado = Console.ReadLine();
-
-        Console.WriteLine("Endereço completo: " + rua + ", " + numeroCasa + " - "
-            + bairro + ", " + cidade + " - " + estado);
+        Console.WriteLine("O resto da divisão por 2 é: " + resto);
+        Console.ReadLine();
     }
 }

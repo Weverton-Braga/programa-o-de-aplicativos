@@ -5,9 +5,12 @@ class Exercicio03
 {
     static void Main()
     {
-        Console.Write("Digite um número de ponto flutuante: ");
-        float numero = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+        Console.Write("Digite um número: ");
+        double numero = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-        Console.WriteLine("O número digitado foi: " + numero);
+        double metade = numero / 2;
+
+        Console.WriteLine("A metade é: " + metade);
+        Console.ReadLine();
     }
 }
